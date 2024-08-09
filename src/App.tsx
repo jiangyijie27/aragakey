@@ -317,8 +317,8 @@ function App() {
               <div className="flex items-center justify-between text-xs text-neutral-600">
                 <div className="flex items-center gap-2">
                   <img
-                    className="w-4 grayscale"
-                    src="https://wxa.wxs.qq.com/wxad-design/yijie/hust.svg"
+                    className="w-4 h-3 grayscale object-cover"
+                    src="https://wxa.wxs.qq.com/wxad-design/yijie/hust-logo.webp"
                   />
                   <a
                     href="https://eic.hust.edu.cn/"
