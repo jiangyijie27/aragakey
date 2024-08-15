@@ -239,7 +239,7 @@ function App() {
                   target="_blank"
                   className="relative text-inherit hover:text-blue-500 underline decoration-dotted decoration-current underline-offset-4 whitespace-nowrap"
                 >
-                  {lang === "en" ? "read more" : "更多"}
+                  {lang === "en" ? "read it" : "更多"}
                 </a>
               </div>
               <div className="flex items-center justify-between text-xs text-neutral-600">
@@ -272,7 +272,7 @@ function App() {
                   target="_blank"
                   className="relative text-inherit hover:text-blue-500 underline decoration-dotted decoration-current underline-offset-4 whitespace-nowrap"
                 >
-                  {lang === "en" ? "read more" : "更多"}
+                  {lang === "en" ? "read it" : "更多"}
                 </a>
               </div>
             </div>
@@ -361,7 +361,7 @@ function App() {
               )}
             </div>
             <div className="my-4 border border-b-[1px] border-dashed border-neutral-200 scale-y-50" />
-            <div className="flex flex-wrap text-xs text-neutral-500 gap-1">
+            <div className="flex flex-wrap text-xs text-neutral-600 gap-1">
               {(lang === "en"
                 ? ["motion design", "creative coding"]
                 : ["动效设计", "创意编程"]
