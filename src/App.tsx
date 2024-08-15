@@ -17,12 +17,13 @@ function App() {
         <img
           src="https://wxa.wxs.qq.com/wxad-design/yijie/heroBg.webp"
           className="absolute top-0 left-0 w-full h-full object-cover scale-x-[2]"
+          alt="aragakey"
         />
       </div>
       <ArtDots />
-      <div className="relative flex flex-col mx-auto my-16 w-[800px]">
+      <div className="relative flex flex-col mx-auto my-16 px-8 max-w-[864px]">
         <div
-          className="absolute z-10 top-2 right-0 flex items-center justify-center w-8 h-8 bg-white border border-solid border-neutral-200 shadow-sm rounded-md cursor-pointer transition-all hover:bg-neutral-50 hover:border-neutral-300 active:scale-95"
+          className="absolute z-10 top-1 right-8 flex items-center justify-center w-8 h-8 bg-white border border-solid border-neutral-200 shadow-sm rounded-md cursor-pointer transition-all hover:bg-neutral-50 hover:border-neutral-300 active:scale-95 | sm:top-2"
           onClick={handleLangChange}
         >
           <svg className="w-5 text-neutral-500" viewBox="0 0 512 512">
@@ -34,7 +35,7 @@ function App() {
         </div>
         <div className="relative overflow-hidden duration-500 opacity-100 delay-500">
           <div className="pb-0">
-            <svg className="w-28" viewBox="0 0 50 12" fill="none">
+            <svg className="w-20 | sm:w-28" viewBox="0 0 50 12" fill="none">
               <path
                 d="M48.3359 8.31445C48.3359 7.875 48.6934 7.51172 49.1387 7.51172C49.5781 7.51172 49.9414 7.875 49.9414 8.31445C49.9414 8.75977 49.5781 9.12305 49.1387 9.12305C48.6934 9.12305 48.3359 8.75977 48.3359 8.31445Z"
                 fill="black"
@@ -73,7 +74,7 @@ function App() {
               />
             </svg>
           </div>
-          <div className="flex flex-col gap-2 text-base font-medium">
+          <div className="flex flex-col gap-2 text-xs font-medium | sm:text-base">
             <div>
               {lang === "en"
                 ? "my vocation is to create elegant and refined UIs."
@@ -87,7 +88,7 @@ function App() {
             gridAutoRows: "minmax(150px, auto)",
           }}
         >
-          <div className="row-start-1 row-end-2 col-start-1 col-end-6 p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md">
+          <div className="p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md row-start-1 row-end-2 col-start-1 col-end-13 | sm:row-start-1 sm:row-end-2 sm:col-start-1 sm:col-end-6">
             <div className="-ml-1 flex items-center justify-center w-8 h-8 border border-solid border-neutral-200 bg-white shadow-sm rounded-lg">
               <svg className="w-5 h-5 text-neutral-600" viewBox="0 0 24 24">
                 <path
@@ -127,7 +128,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="row-start-2 row-end-3 col-start-1 col-end-6 p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md">
+          <div className="p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md row-start-2 row-end-3 col-start-1 col-end-13 | sm:row-start-2 sm:row-end-3 sm:col-start-1 sm:col-end-6">
             <div className="flex flex-col gap-2 text-xs text-neutral-500">
               <div>
                 {lang === "en"
@@ -170,15 +171,16 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="relative row-start-1 row-end-3 col-start-6 col-end-13 border border-solid border-neutral-200 rounded-md">
+          <div className="relative border border-solid border-neutral-200 rounded-md hidden row-start-1 row-end-3 col-start-6 col-end-13 | sm:block">
             <div className="absolute top-[6px] left-[6px] right-[6px] bottom-[6px] bg-neutral-50 border border-solid border-neutral-100 rounded-md overflow-hidden">
               <img
                 className="relative top-28 -left-4 block w-full h-full object-contain origin-bottom scale-150"
-                src="https://wxa.wxs.qq.com/wxad-design/yijie/the-aragakey-avatar.png"
+                src="https://wxa.wxs.qq.com/wxad-design/yijie/the-aragakey-avatar-1.webp"
+                alt="aragakey"
               />
             </div>
           </div>
-          <div className="row-start-3 row-end-4 col-start-1 col-end-8 p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md">
+          <div className="p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md row-start-3 row-end-4 col-start-1 col-end-13 | sm:row-start-3 sm:row-end-4 sm:col-start-1 sm:col-end-8">
             <div className="-ml-1 flex items-center justify-center w-8 h-8 border border-solid border-neutral-200 bg-white shadow-sm rounded-lg">
               <svg className="w-5 h-5 text-neutral-600" viewBox="0 0 24 24">
                 <path
@@ -196,7 +198,7 @@ function App() {
                   <img
                     className="w-4 grayscale"
                     src="https://wxa.wxs.qq.com/wxad-design/yijie/top-logo.webp"
-                    alt=""
+                    alt="top-logo"
                   />
                   <Link
                     href="https://wxad.design/abc/bm"
@@ -235,7 +237,7 @@ function App() {
                 <a
                   href="https://wxad.design/abc/adui"
                   target="_blank"
-                  className="relative text-inherit hover:text-blue-500 underline decoration-dotted decoration-current underline-offset-4"
+                  className="relative text-inherit hover:text-blue-500 underline decoration-dotted decoration-current underline-offset-4 whitespace-nowrap"
                 >
                   {lang === "en" ? "read more" : "更多"}
                 </a>
@@ -268,14 +270,14 @@ function App() {
                 <a
                   href="https://wxad.design/abc/wxad"
                   target="_blank"
-                  className="relative text-inherit hover:text-blue-500 underline decoration-dotted decoration-current underline-offset-4"
+                  className="relative text-inherit hover:text-blue-500 underline decoration-dotted decoration-current underline-offset-4 whitespace-nowrap"
                 >
                   {lang === "en" ? "read more" : "更多"}
                 </a>
               </div>
             </div>
           </div>
-          <div className="row-start-3 row-end-4 col-start-8 col-end-13 p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md">
+          <div className="p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md row-start-4 row-end-5 col-start-1 col-end-13 | sm:row-start-3 sm:row-end-4 sm:col-start-8 sm:col-end-13">
             <div className="-ml-1 flex items-center justify-center w-8 h-8 border border-solid border-neutral-200 bg-white shadow-sm rounded-lg">
               <svg className="w-5 h-5 text-neutral-600" viewBox="0 0 24 24">
                 <path
@@ -319,6 +321,7 @@ function App() {
                   <img
                     className="w-4 h-3 grayscale object-cover"
                     src="https://wxa.wxs.qq.com/wxad-design/yijie/hust-logo.webp"
+                    alt="hust-logo"
                   />
                   <a
                     href="https://eic.hust.edu.cn/"
@@ -333,7 +336,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="row-start-4 row-end-5 col-start-1 col-end-5 p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md">
+          <div className="p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md row-start-5 row-end-6 col-start-1 col-end-13 | sm:row-start-4 sm:row-end-5 sm:col-start-1 sm:col-end-5">
             <div className="-ml-1 flex items-center justify-center w-8 h-8 border border-solid border-neutral-200 bg-white shadow-sm rounded-lg">
               <svg className="w-5 h-5 text-neutral-600" viewBox="0 0 24 24">
                 <path
@@ -345,7 +348,7 @@ function App() {
             <div className="mt-2 mb-6 text-base font-medium">
               {lang === "en" ? "Skills" : "技能"}
             </div>
-            <div className="flex flex-wrap text-xs text-neutral-500 gap-1">
+            <div className="flex flex-wrap text-xs text-neutral-600 gap-1">
               {["react", "vue", "typescript", "scss", "next.js", "node.js"].map(
                 (skill) => (
                   <div
@@ -372,7 +375,7 @@ function App() {
               ))}
             </div>
           </div>
-          <div className="row-start-4 row-end-5 col-start-5 col-end-13 p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md">
+          <div className="p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md row-start-6 row-end-7 col-start-1 col-end-13 | sm:row-start-4 sm:row-end-5 sm:col-start-5 sm:col-end-13">
             <div className="-ml-1 flex items-center justify-center w-8 h-8 border border-solid border-neutral-200 bg-white shadow-sm rounded-lg">
               <svg className="w-5 h-5 text-neutral-600" viewBox="0 0 24 24">
                 <path
@@ -384,7 +387,7 @@ function App() {
             <div className="mt-2 mb-6 text-base font-medium">
               {lang === "en" ? "Crafts" : "玩具"}
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 gap-3 | sm:grid-cols-2">
               <div className="flex items-center justify-between text-xs text-neutral-600">
                 <div className="flex items-center gap-2">
                   <svg className="w-4 grayscale" viewBox="0 0 24 24">
@@ -472,7 +475,7 @@ function App() {
                   <img
                     className="w-4 grayscale"
                     src="https://wxa.wxs.qq.com/wxad-design/yijie/top-logo.webp"
-                    alt=""
+                    alt="logo"
                   />
                   <a
                     href="https://wxad.design/best-hearts"
