@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: "export",
+  basePath: "/aragakey",
+  reactStrictMode: false,
+  images: {
+    domains: ["avatars.githubusercontent.com"],
+  },
+}
 
-export default nextConfig;
+export default nextConfig
