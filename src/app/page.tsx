@@ -1,10 +1,10 @@
 "use client"
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic"
 import { useState } from "react"
 import Link from "@/components/Link"
 
 // import ArtDots from "@/components/ArtDots"
-const ArtDots = dynamic(() => import('@/components/ArtDots'), { ssr: false })
+const ArtDots = dynamic(() => import("@/components/ArtDots"), { ssr: false })
 
 export default function Home() {
   const [lang, setLang] = useState<"en" | "zh">("en")
@@ -142,14 +142,22 @@ export default function Home() {
               </div>
               <div>
                 {lang === "en"
-                  ? "I’m passionate about creative & "
-                  : "我保持着对这些事的热情：创意设计与"}
+                  ? "I’m passionate about creative design, "
+                  : "我保持着对这些事的热情：创意设计, "}
                 <a
                   href="https://wxad.design/abc/functional-motion"
                   target="_blank"
                   className="relative text-inherit hover:text-blue-500 underline decoration-dotted decoration-current underline-offset-4"
                 >
                   {lang === "en" ? "motion design" : "动效设计"}
+                </a>
+                ,{" "}
+                <a
+                  href="https://wxad.design/abc/making-fluid-interfaces"
+                  target="_blank"
+                  className="relative text-inherit hover:text-blue-500 underline decoration-dotted decoration-current underline-offset-4"
+                >
+                  {lang === "en" ? "interactive animation" : "交互动画"}
                 </a>
                 , React,{" "}
                 <a
