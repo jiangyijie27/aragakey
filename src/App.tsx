@@ -137,8 +137,16 @@ function App() {
               </div>
               <div>
                 {lang === "en"
-                  ? "I’m passionate about creative & "
-                  : "我保持着对这些事的热情：创意设计与"}
+                  ? "I’m passionate about creative, "
+                  : "我保持着对这些事的热情：创意设计, "}
+                <a
+                  href="https://wxad.design/abc/making-fluid-interfaces"
+                  target="_blank"
+                  className="relative text-inherit hover:text-blue-500 underline decoration-dotted decoration-current underline-offset-4"
+                >
+                  {lang === "en" ? "interactive animation" : "交互动画"}
+                </a>
+                ,{" "}
                 <a
                   href="https://wxad.design/abc/functional-motion"
                   target="_blank"
