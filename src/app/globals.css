@@ -67,9 +67,20 @@ body::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0);
 }
 
-::view-transition-old(root) {
+/* ::view-transition-old(root) {
   animation: 1000ms ease both wxadFadeOut;
   transform-origin: 50% 35px;
+  mix-blend-mode: initial;
+}
+
+::view-transition-new(root) {
+  animation: 1100ms ease both wipe-in 50ms;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent calc(var(--wipe-in) - 40%),
+    black var(--wipe-in),
+    black 100%
+  );
   mix-blend-mode: initial;
 }
 
@@ -83,17 +94,6 @@ body::-webkit-scrollbar-track {
   syntax: "<percentage>";
   inherits: false;
   initial-value: 0%;
-}
-
-::view-transition-new(root) {
-  animation: 1100ms ease both wipe-in 50ms;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent calc(var(--wipe-in) - 40%),
-    black var(--wipe-in),
-    black 100%
-  );
-  mix-blend-mode: initial;
 }
 
 @keyframes wxadFadeOut {
@@ -121,5 +121,41 @@ body::-webkit-scrollbar-track {
   }
   to {
     --wipe-in: 0%;
+  }
+} */
+
+/* 修改 view transition 效果 */
+::view-transition-old(root) {
+  @media not (prefers-reduced-motion: reduce) {
+    animation: hide 0.4s cubic-bezier(0.6, 0, 0.8, 1) forwards;
+  }
+}
+
+::view-transition-new(root) {
+  @media not (prefers-reduced-motion: reduce) {
+    opacity: 0;
+    animation: appear 0.6s 0.2s forwards;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    filter: blur();
+  }
+  to {
+    opacity: 0;
+    filter: blur(3px);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    filter: blur();
   }
 }

@@ -134,7 +134,7 @@ export default function Home() {
             </div>
           </div>
           <div className="p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md row-start-2 row-end-3 col-start-1 col-end-13 | sm:row-start-2 sm:row-end-3 sm:col-start-1 sm:col-end-6">
-            <div className="flex flex-col gap-2 text-xs text-neutral-500">
+            <div className="flex flex-col gap-2 text-xs text-neutral-500 whitespace-break-spaces">
               <div>
                 {lang === "en"
                   ? "I’ve been working as a senior design engineer (UX engineer) at WeChat Ads Team for 9 years."
@@ -142,8 +142,8 @@ export default function Home() {
               </div>
               <div>
                 {lang === "en"
-                  ? "I’m passionate about creative design, "
-                  : "我保持着对这些事的热情：创意设计, "}
+                  ? "I’m passionate about:\ncreative design, "
+                  : "我保持着对这些事的热情：\n创意设计, "}
                 <a
                   href="https://wxad.design/abc/functional-motion"
                   target="_blank"
