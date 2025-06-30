@@ -136,9 +136,14 @@ export default function Home() {
           <div className="p-6 bg-neutral-50 border border-solid border-neutral-200 rounded-md row-start-2 row-end-3 col-start-1 col-end-13 | sm:row-start-2 sm:row-end-3 sm:col-start-1 sm:col-end-6">
             <div className="flex flex-col gap-2 text-xs text-neutral-500 whitespace-break-spaces">
               <div>
-                {lang === "en"
-                  ? "I’ve been working as a senior design engineer (UX engineer) at WeChat Ads Team for 9 years."
-                  : "我在微信广告设计团队担任设计工程师（UX 工程师），已超过 9 年。"}
+                {lang === "en" ? (
+                  <>
+                    I’ve been working as a design engineer (UX engineer)
+                    at WeChat Ads Team for 10 years.
+                  </>
+                ) : (
+                  "我在微信广告设计团队担任设计工程师（UX 工程师），已超过 10 年。"
+                )}
               </div>
               <div>
                 {lang === "en"
